@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+ background-color: #E5E5E5;
+}
+
+body::before{
+    content: '';
+    background-color: #535971;
+    width: 100%;
+    height: 436px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.page {
+    width: 750px;
+    margin: auto;
+}
+
+header {
+    margin-top: 140px;
+    width: 417px;
+}
+
+header h1 {
+    font-family: 'Staatliches', cursive;
+    font-size: 48px;
+    line-height: 60px;
+    color: #fff;
+}
+
+header p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+
+    margin-top: 18px;
+    margin-bottom: 58px;
+}
+
+form {
+    display: flex;
+
+    background-color: #fff;
+    margin: auto;
+
+    flex-direction: column;
+
+    padding: 64px;
+
+    min-height: 300px;
+
+    border-radius: 20px 20px 0 0;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset legend {
+    font-family: 'Staatliches', cursive;
+    font-size: 24px;
+    line-height: 34px;
+    border-bottom: 1px solid #E6E6F0;
+    padding-bottom: 16px;
+
+    width: 100%;
+
+    font-weight: 600;
+
+    margin-bottom: 36px;
+    color: #535971;
+    font-weight: 400;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper label {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Poppins', sans-serif;
+
+    color: #4E4958;
+}
+
+.input-wrapper label span {
+    color: #C1BCCC;
+}
+
+.input-wrapper label span:hover {
+    color: #6c6a71;
+}
+
+.input-wrapper input {
+    background: #FAFAFC;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+
+    height: 56px;
+
+    margin-top: 8px;
+    margin-bottom: 16px;
+
+    padding: 0 24px;
+}
+
+.input-name {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
+
+.input-name :nth-child(1) input, #event-lastname {
+    width: 300px;
+}
+
+fieldset .fieldset-legend {
+    padding-bottom: 8px;
+    margin-top: 32px;
+}
+
+fieldset .fieldset-mentorship {
+    border: none;
+    font-size: 20px;
+    line-height: 34px;
+    margin-bottom: 0;
+}
+
+.input-events {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+.input-events div:nth-child(1) input{
+    width: 300px;
+}
+
+#begin, #finish {
+    width: 140px;
+}
+
+footer {
+    width: 750px;
+    height: 160px;
+    left: 345px;
+    top: 1404px;
+
+    background-color: #535971;
+
+    border-radius: 0 0 20px 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 52px 71px;
+
+    margin-bottom: 100px;
+    border-top: 1px solid #D6D6D6;
+}
+
+.button {
+    display: flex;
+    height: 55px;
+
+    border-radius: 20px;
+
+    background-color: #FF5374;
+
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+    line-height: 26px;
+    color: white;
+
+    border: 0;
+
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #e43d5f;
+
+}
